@@ -18,7 +18,7 @@ route.post("/add",async(req,res)=>{
 route.get("/",async(req,res)=>{
 
     let perPage = +req.query.limit;
-    let page = Math.max(0,req.query.page)
+    let page = Math.max(0,req.query.page);
     try {
         
         const data = await Vendor.find().skip(perPage*(page-1)).limit(perPage)
