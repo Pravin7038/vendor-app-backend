@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
         
     } catch (error) {
         
-        res.send({msg:error})
+        res.send({msg:error});
     }
 })
 const connect = async () => {
