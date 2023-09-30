@@ -12,6 +12,8 @@ app.use("/vendors",VendorRoute);
 app.get("/",(req,res)=>{
 
     try {
+
+        res.send({msg:"Welcome to the server"});
         
     } catch (error) {
         
